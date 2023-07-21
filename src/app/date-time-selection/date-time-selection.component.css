@@ -1,0 +1,139 @@
+/* Add this CSS to add space between the dropdown and the button */
+.spacer {
+    margin: 20px 0;
+  }
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the dropdown button */
+  .dropbtn {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown content when the dropdown button is clicked */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .button {
+    border-radius: 4px;
+    background-color: #1f8300;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* Add custom styles for the date picker */
+input[type="date"] {
+    /* Remove the default arrow icon */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Set the background color */
+    background-color: #f2f2f2;
+    /* Add some padding to the input */
+    padding: 10px;
+    /* Add a border and remove outline */
+    border: black;
+    border-radius: 5px;
+    outline: none;
+    /* Add a custom arrow icon */
+    
+    background-repeat: no-repeat;
+    background-position: right center;
+    /* Adjust the width and height if needed */
+    width: 200px;
+    height: 40px;
+    /* Center the text */
+    text-align: center;
+    /* Customize the font size and color */
+    font-size: 16px;
+    color: #333;
+    /* Add transition for a smooth effect */
+    transition: all 0.3s ease;
+  }
+  
+  /* Style for the date picker when it's focused */
+  input[type="date"]:focus {
+    /* Add a box shadow or any other styles you prefer */
+    box-shadow: 0 0 5px #ddd;
+  }
+  
+  /* Style for the date picker when it's hovered */
+  input[type="date"]:hover {
+    /* Add any hover effect you prefer */
+    background-color: #e0e0e0;
+  }
+  
+  /* Style for the date picker when it's disabled */
+  input[type="date"]:disabled {
+    /* Add any styles for disabled state */
+    background-color: #f9f9f9;
+    color: #999;
+    cursor: not-allowed;
+  }
+  

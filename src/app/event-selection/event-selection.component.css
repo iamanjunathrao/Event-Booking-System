@@ -1,0 +1,74 @@
+.nav-tabs {
+    display: flex; /* Display tabs horizontally */
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    border: 1px solid #000000;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    color: #000000;
+    cursor: pointer; /* Show pointer cursor on tabs */
+  }
+  
+  .nav-link.active {
+    background-color: #a6a6a6;
+    border-bottom: none;
+  }
+  
+  .selected-event {
+    border: 1px solid #000000;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .btn-primary {
+    border-radius: 4px;
+    background-color: #1e3bf4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .btn-primary span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-primary span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-primary:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn-primary:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 200px; /* Set a small width */
+  }
+  
+  /* Add a hover effect (blue shadow) */
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }

@@ -1,0 +1,26 @@
+<div class="container" style="align-items: center; text-align: center; justify-content: center;">
+  <h2>Select an Event</h2>
+  <div class="nav nav-tabs" role="tablist" style="align-items: center; text-align: center; justify-content: center;">
+    <ng-container *ngFor="let event of events">
+      <a class="nav-item nav-link" (click)="selectEvent(event)" [class.active]="event === selectedEvent">
+        {{ event.name }}
+      </a>
+    </ng-container>
+  </div>
+  <div *ngIf="selectedEvent" class="selected-event mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img [src]="selectedEvent.image" alt="{{ selectedEvent.name }}" width="200" height="200">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h3>{{ selectedEvent.name }}</h3>
+        <p>{{ selectedEvent.description }}</p>
+        <p>
+          <button type="button" class="btn btn-primary btn-lg" (click)="bookEvent()" routerLink="/date-time-selection"><span>Book</span></button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
